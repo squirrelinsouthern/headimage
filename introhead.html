@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>test</title>
+    <style>
+    
+        section>.intro-head {
+            width: 100%;
+            height: 417px;
+            background-image: url('./img/home-bg.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+        .wrapper {
+            color: aliceblue;
+/*             
+            padding-top: 150px;
+            padding-bottom: 150px; */
+        }
+        .wrapper div{
+            border: 1px solid red;
+        }
+        .wrapper h1{
+            font-size: 80px;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <section>
+        <div class="intro-head">
+            <div class="container">
+                <div class="row">
+                    <div class="wrapper">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <h1 class="text-center">HELLO!</h1>
+                            <p class="text-center" class="text-lowercase">background-size：100% 100%;---按容器比例撑满，图片变形；
+                                    background-size：cover;---把背景图片放大到适合元素容器的尺寸，图片比例不变。</p>
+                            <p class="text-center" class="text-lowercase">如果在图片上有叠加内容的时候建议使用background  把图片当做层的背景使用，这样图片上面还可以叠加内容，如果图片上不叠加内容就用img；如果考虑到后台数据更新的话，建议用img,因background最好写在CSS里 不方便后台数据调用。通凭banner最好设置成宽度：100%   高度不设置，这样banner会跟随着分辨率的大小自动缩放（这样图片上不建议叠加内容）。
+
+                    </p>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- part01 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-8"><img src="./img/ad1.jpg" class="img-responsive"></div>
+            <div class="col-md-4"><img src="./img/ad1.jpg" class="img-responsive"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
